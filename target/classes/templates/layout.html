@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+	<title>Proyecto Facultad Spring Boot</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css" th:href="@{/css/main.css}">
+
+	
+</head>
+
+<body>
+	<!-- Navegación -->
+	<header th:fragment="header">
+		<div class="container">
+			<nav class="navbar" role="navigation" aria-label="main navigation">
+				<div class="navbar-start" >
+					<a class="navbar-item" href="/">
+						Inicio
+	                </a>
+
+					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+						data-target="navbarBasicExample">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+
+				<div id="navbarBasicExample" class="navbar-menu">
+					<div class="navbar-start">
+
+						
+						<div class="navbar-item has-dropdown is-hoverable ">
+							<a class="navbar-link navbar-item">
+								Buscar produccion
+							</a>
+
+							<div class="navbar-dropdown">
+								<a class="navbar-item" href="/Produccion/000">
+									000
+								</a>
+								<a class="navbar-item" href="/Produccion/002">
+									002
+								</a>
+								<a class="navbar-item" href="/Produccion/003">
+									003
+								</a>
+								<a class="navbar-item" href="/Produccion/004">
+									004
+								</a>
+								<a class="navbar-item" href="/Produccion/005">
+									005
+								</a>
+								<a class="navbar-item" href="/Produccion/006">
+									006
+								</a>
+								<a class="navbar-item" href="/Produccion/007">
+									007
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<br>
+		<br>
+	</header>
+	
+	<div class="container">
+		
+	</div>
+	<footer th:fragment="footer" class="card-footer">
+		
+		<p class="card-footer-item">
+			<br>
+		    <br>
+			<span>
+				30/Mayo/2023
+			</span>
+		</p>
+	</footer>
+</body>
+
+</html>
